@@ -21,8 +21,7 @@ Open `UV instantaneous.ipynb` in JupyterLab and run its cells from top to bottom
 
 ## Website direction
 
-The notebook is the scientific prototype and source of the visualization logic. The next development step is to move the interactive experience into a browser-facing application while keeping the calculations testable and separate from the page layout.
-
+This notebook currently is the prototype for the internals of the future website.
 ## Repository layout
 
 ```text
