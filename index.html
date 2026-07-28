@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore the Event Horizon Telescope network and its instantaneous UV coverage."
+    />
+    <title>EHT Network Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="EHT Network Explorer home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>EHT Network Explorer</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#explorer">Explorer</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Event Horizon Telescope</p>
+        <h1>See Earth become a telescope.</h1>
+        <p class="hero-copy">
+          Explore the observatories that work together to image black holes and
+          see how their baselines shape instantaneous UV coverage.
+        </p>
+        <a class="primary-action" href="#explorer">Open the explorer</a>
+      </section>
+
+      <section class="explorer" id="explorer" aria-labelledby="explorer-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Interactive model</p>
+            <h2 id="explorer-title">Network view</h2>
+          </div>
+          <span class="status"><span></span> JavaScript migration ready</span>
+        </div>
+
+        <div class="workspace">
+          <aside class="controls" aria-label="Visualization controls">
+            <label for="target">Observation target</label>
+            <select id="target" name="target">
+              <option value="m87">M87*</option>
+              <option value="sgr-a">Sagittarius A*</option>
+            </select>
+
+            <label for="observation-time">Observation time (UTC)</label>
+            <input id="observation-time" type="datetime-local" value="2026-04-11T00:00" />
+
+            <button id="update-view" type="button">Update view</button>
+            <p id="view-message" class="control-note" aria-live="polite">
+              Controls are connected. Calculation logic can be moved here from the notebook next.
+            </p>
+          </aside>
+
+          <div class="visualization" id="visualization" role="img" aria-label="Placeholder for the EHT globe visualization">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="globe">
+              <span class="station station-one"></span>
+              <span class="station station-two"></span>
+              <span class="station station-three"></span>
+              <span class="station station-four"></span>
+            </div>
+            <div class="visualization-label">
+              <strong>Visualization mount point</strong>
+              <span>Replace this placeholder from <code>app.js</code>.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <p class="eyebrow">About the project</p>
+        <h2>From scientific notebook to web experience.</h2>
+        <p>
+          The Python notebook remains the reference model while its station data,
+          coordinate calculations, and Plotly views are translated into browser-native JavaScript.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span>EHT Network Explorer</span>
+      <span>Independent educational visualization</span>
+    </footer>
+  </body>
+</html>
