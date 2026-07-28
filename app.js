@@ -10,7 +10,3 @@ updateButton.addEventListener("click", () => {
   message.textContent = `${targetName} selected for ${time} UTC. Add the translated baseline calculation here next.`;
 });
 
-// Migration plan:
-// 1. Move the station list from the notebook into a JavaScript data module.
-// 2. Translate the coordinate and visibility calculations into pure functions.
-// 3. Render the globe and UV plot inside #visualization.
