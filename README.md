@@ -21,14 +21,13 @@ Open `UV instantaneous.ipynb` in JupyterLab and run its cells from top to bottom
 
 ## Website direction
 
-The notebook is the prototype for the internals of the future website. The repository now also includes a static website foundation that can be hosted on GitHub Pages. Calculations and Plotly views can be moved incrementally into `app.js` or additional JavaScript modules.
+The notebook is the prototype for the internals of the future website. The repository also includes a local static website foundation. Calculations and Plotly views can be moved incrementally into `app.js` or additional JavaScript modules.
 
-To preview the website locally, open `index.html` in a browser. After the files are pushed, select **GitHub Actions** as the deployment source under the repository's **Settings → Pages** screen.
+To preview the framework locally, open `index.html` in a browser. The repository is not configured to deploy a website.
 ## Repository layout
 
 ```text
 .
-├── .github/workflows/      # Automatic GitHub Pages deployment
 ├── UV instantaneous.ipynb  # Current visualization prototype
 ├── index.html              # Website structure and content
 ├── styles.css              # Website appearance and responsive layout
